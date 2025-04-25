@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Aarnitech</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Aarnitech Logo" class="logo">
+    <header class="hero">
+        <img src="logo.png" alt="Aarnitech Logo" class="logo" />
         <h1>Aarnitech</h1>
-        <p>Smart tech solutions with a circular economy mindset.</p>
+        <p class="subtitle">Smart tech solutions through second-hand and circular thinking</p>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>I love solving tech-related purchases by finding the best deals in second-hand markets.  
-        I've been a hobbyist tinkerer with tech for two decades, passionate about both software and hardware. Circular economy is my passion.</p>
-    </section>
+    <main>
+        <section class="about card">
+            <h2>About</h2>
+            <p>I love solving tech-related purchases by finding the best deals in second-hand markets.
+            I've been a hobbyist tinkerer with tech for two decades, passionate about both software and hardware. Circular economy is my passion.</p>
+        </section>
 
-    <section id="services">
-        <h2>Services</h2>
-        <ul>
-            <li><strong>Find 2nd-hand electronics:</strong> €50–150</li>
-            <li><strong>Build custom computers:</strong> €100–200</li>
-            <li><strong>Basic IT troubleshooting:</strong> €50–100</li>
-        </ul>
-    </section>
+        <section class="services">
+            <h2>Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>🔍 Find 2nd-hand electronics</h3>
+                    <p>€50–150<br><small>Let me find the best deal tailored to your needs.</small></p>
+                </div>
+                <div class="card">
+                    <h3>🛠️ Build custom computers</h3>
+                    <p>€100–200<br><small>Fully working setups from high-quality reused parts.</small></p>
+                </div>
+                <div class="card">
+                    <h3>🧑‍💻 Basic IT troubleshooting</h3>
+                    <p>€50–100<br><small>For software issues, small repairs, and home setup help.</small></p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Phone: <a href="tel:+YOURNUMBER">+YOURNUMBER</a><br>
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <section class="contact card">
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:+YOURNUMBER">+YOURNUMBER</a><br>
+               Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
 
-        <form action="https://formspree.io/f/yourformid" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 Aarnitech</p>
+        <p>© 2025 Aarnitech — Tech with purpose</p>
     </footer>
 </body>
 </html>
