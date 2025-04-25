@@ -1,87 +1,114 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --green: #1DB954;
+    --gray-bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --text: #222;
+    --accent: #17a44d;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background: var(--gray-bg);
+    color: var(--text);
 }
 
-header {
+.hero {
+    background: var(--green);
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
+    padding: 40px 20px;
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-section {
-    background: white;
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #1DB954;
+    color: var(--green);
     margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-ul li {
-    margin-bottom: 10px;
+.services .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.services .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 a {
-    color: #1DB954;
+    color: var(--green);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 form input, form textarea {
-    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
 form button {
-    padding: 10px;
-    background: #1DB954;
+    background: var(--green);
     color: white;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #17a44d;
+    background: var(--accent);
 }
 
 footer {
     text-align: center;
-    font-size: 0.8em;
-    margin-top: 20px;
+    padding: 20px;
+    font-size: 0.85rem;
+    background: #e9ecef;
 }
