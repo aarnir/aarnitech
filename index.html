@@ -170,6 +170,30 @@
         }
         
         /* Sections */
+        .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
         section {
             padding: 5rem 0;
         }
