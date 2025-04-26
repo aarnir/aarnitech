@@ -165,6 +165,22 @@
         }
         
         /* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 2em;
+          }
+          
+.section-title::after {
+content: "";
+display: block;
+width: 60px;
+height: 3px;
+background-color: #4CAF50; /* green color, you can customize */
+margin: 10px auto 0;
+border-radius: 2px;
+          }
 .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
