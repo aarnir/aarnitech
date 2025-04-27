@@ -551,4 +551,37 @@ border-radius: 2px;
               width: 80%;
             }
           }
+          .about-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            align-items: center;
+            justify-items: center;
+            padding: 20px 0;
+          }
+          
+          .about-item {
+            text-align: center;
+          }
+          
+          .about-image {
+            width: 150px; /* Quarter size roughly */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          .about-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 300px;
+            margin: 0 auto;
+          }
+          
+          /* Mobile: Stack items if screen too small */
+          @media (max-width: 768px) {
+            .about-grid {
+              grid-template-columns: 1fr;
+            }
+          }
           
