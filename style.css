@@ -593,13 +593,6 @@ footer {
   text-align: center;
 }
 
-.about-image {
-  width: 250px; /* Quarter size roughly */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .about-item p {
   font-size: 1rem;
   line-height: 1.5;
@@ -614,7 +607,7 @@ footer {
   }
 }
 .about-image {
-  width: 150px;
+  width: 250px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
