@@ -565,7 +565,7 @@ border-radius: 2px;
           }
           
           .about-image {
-            width: 150px; /* Quarter size roughly */
+            width: 250px; /* Quarter size roughly */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
