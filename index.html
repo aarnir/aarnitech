@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
+<script>
+    function toggleService(card) {
+      const details = card.querySelector('.service-details');
+      if (details.style.display === "block") {
+        details.style.display = "none";
+      } else {
+        details.style.display = "block";
+      }
+    }
+    </script>
+    
 <body>
     <!-- Header Section -->
     <header id="header">
@@ -38,54 +49,44 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="card">
-        <h2 class="section-title">Tietoa minusta</h2>
+    <section id="about-and-services" class="card">
+        <h2 class="section-title">Tietoa ja palvelut</h2>
       
-        <div class="about-container left-align">
-          <div class="about-block">
-            <img src="aarni1.jpg" alt="Aarni tekniikan parissa" class="about-image-small">
-            <p>Tarjoan matalan kynnyksen apua erilaisiin teknisiin tarpeisiin — ilman turhaa jargonia tai monimutkaisuutta. Olipa kyse uuden laitteen hankinnasta, nykyisen järjestelmän käyttöönotosta tai pienistä IT-pulmista, autan löytämään selkeät ja käytännölliset ratkaisut.</p>
-          </div>
+        <div class="about-intro">
+          <p>Tarjoan matalan kynnyksen apua erilaisiin teknisiin tarpeisiin — ilman turhaa jargonia tai monimutkaisuutta. Esimerkiksi uuden laitteen hankinta, nykyisen järjestelmän käyttöönotto tai pienet IT-pulmat hoituvat helposti ja ystävällisesti.</p>
         </div>
       
-        <div class="about-container right-align">
-          <div class="about-block">
-            <p>Palveluni kattaa esimerkiksi tietokoneet, televisiot, äänentoistolaitteet ja verkkoyhteydet. Toimin rennolla ja helposti lähestyttävällä otteella, jotta tekniikka ei tuntuisi vaikealta vaan toimisi juuri niin kuin pitää.</p>
-            <img src="aarni2.JPG" alt="Tekninen tuki ja palvelu helposti" class="about-image-small">
+        <div class="services-grid">
+          <div class="service-card" onclick="toggleService(this)">
+            <h3>🌿 Vihreä ostaja</h3>
+            <div class="service-details">
+              <p>Autan sinua löytämään parhaan käytetyn laitteen tarpeisiisi — kestävästi ja kustannustehokkaasti. Ei enää tuntikausien vertailua ja pähkäilyä!</p>
+            </div>
+          </div>
+      
+          <div class="service-card" onclick="toggleService(this)">
+            <h3>🛠️ Käyttöönotto ja päivitykset</h3>
+            <div class="service-details">
+              <p>Olipa kyseessä uusi laite tai vanhemman tietokoneen päivitys, asennan, säädän ja huollan laitteet toimivaksi paketiksi.</p>
+            </div>
+          </div>
+      
+          <div class="service-card" onclick="toggleService(this)">
+            <h3>📦 Inventointi ja jälleenmyynti</h3>
+            <div class="service-details">
+              <p>Käyn läpi vanhat laitteesi, teen niistä arvion ja autan löytämään niille uuden kodin — tai ostan ne suoraan sinulta.</p>
+            </div>
+          </div>
+      
+          <div class="service-card" onclick="toggleService(this)">
+            <h3>🎮 Pelikone käytettynä</h3>
+            <div class="service-details">
+              <p>Haaveissa pelikone mutta budjetti tiukalla? Rakennan tarpeisiisi sopivan pelikoneen laadukkaista käytetyistä osista!</p>
+            </div>
           </div>
         </div>
-      
       </section>
       
-
-    <!-- Services Section -->
-    <section class="services">
-  <h2 class="section-title">Services</h2>
-  <div class="service-cards">
-    <div class="card">
-        <h3>🌿 <span class="highlight">Vihreä hankinta</span></h3>
-      <p>Haluatko tehdä teknologiahankinnan, mutta et jaksa selvittää, vertailla ja ottaa huomioon kiertotalousajattelua samalla kertaa? Anna minun hoitaa se puolestasi.</p>
-    </div>
-
-    <div class="card">
-      <h3>🛠️ Setup & Updates</h3>
-      <p>Whether it's a brand new laptop or a five-year-old desktop, I'll get it running smoothly — updates, installs, connections and all.</p>
-    </div>
-
-    <div class="card">
-      <h3>📦 Declutter & Resell</h3>
-      <p>Have a stash of forgotten tech in a drawer or attic? I'll help you make sense of it, offer a fair buy, or find you a buyer and handle the deal.</p>
-    </div>
-
-    <div class="card">
-      <h3>🎮 Gaming PC Builder</h3>
-      <p>Want to get into PC gaming without dropping a fortune? I'll build you a capable setup using trusted second-hand parts, based on your needs and budget.</p>
-    </div>
-  </div>
-</section>
-
-    </section>
 
     <!-- Contact Section -->
     <section id="contact">

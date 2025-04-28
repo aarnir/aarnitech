@@ -250,91 +250,47 @@ section:nth-child(even) {
   background-color: var(--primary-color);
 }
 
-/* About Section */
-.about-container {
-  display: flex;
-  margin: 20px 0;
-}
-
-.left-align {
-  justify-content: flex-start;
-}
-
-.right-align {
-  justify-content: flex-end;
-}
-
-.about-block {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Small nice gap between image and text */
-  background-color: transparent; /* no weird colors */
-}
-
-.about-image-small {
-  width: 225px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-image-small:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.about-block p {
-  max-width: 300px;
+.about-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
   font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
 }
 
-/* Mobile: Stack everything nicely */
-@media (max-width: 768px) {
-  .about-container {
-    justify-content: center;
-  }
-  .about-block {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Services Section */
+/*About-services section*/
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .service-card {
-  background-color: var(--white);
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 3px solid var(--primary-color);
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .service-card h3 {
-  margin-top: 0;
-}
-
-.service-card .price {
-  font-weight: 700;
-  color: var(--primary-color);
-  margin: 1rem 0;
+  margin: 0 0 10px;
+  color: var(--green);
   font-size: 1.2rem;
 }
+
+.service-details {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 
 /* Contact Section */
 .contact-content {
