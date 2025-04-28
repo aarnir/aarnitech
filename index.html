@@ -252,6 +252,24 @@
         });
       });
 
+      function toggleService(clickedCard) {
+        // First, close all service details
+        const allDetails = document.querySelectorAll(".service-details");
+        allDetails.forEach((detail) => {
+          detail.style.display = "none";
+        });
+
+        // Then, open the clicked card if it wasn't already open
+        const clickedDetails = clickedCard.querySelector(".service-details");
+        if (
+          clickedDetails.style.display === "none" ||
+          clickedDetails.style.display === ""
+        ) {
+          clickedDetails.style.display = "block";
+        } else {
+          clickedDetails.style.display = "none";
+        }
+      }
       // Simple form submission handling
       document
         .getElementById("contactForm")
