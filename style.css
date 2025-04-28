@@ -272,7 +272,7 @@ section:nth-child(even) {
 }
 
 .about-image-small {
-  width: 120px;
+  width: 225px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
