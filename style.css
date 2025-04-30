@@ -198,3 +198,38 @@ nav ul li a:hover:after {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.about-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  flex: 2;
+  min-width: 300px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
