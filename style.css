@@ -70,6 +70,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
 /* Header */
 header {
   background-color: var(--white);
