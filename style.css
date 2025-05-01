@@ -185,10 +185,9 @@ nav ul li a:hover:after {
 }
 .about-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap;
 }
 .about-image {
   flex: 1;
