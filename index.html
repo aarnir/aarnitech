@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Aarni Tech - Technology Solutions</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="favicon.png" rel="icon" type="image/png" />
-  </head>
-  <script>
-    function toggleService(card) {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Aarni Tech - Technology Solutions
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <script>
+  function toggleService(card) {
       const details = card.querySelector(".service-details");
       if (details.style.display === "block") {
         details.style.display = "none";
@@ -16,280 +18,311 @@
         details.style.display = "block";
       }
     }
-  </script>
-  <body>
-    <!-- Header Section -->
-    <header id="header">
-      <div class="container">
-        <div class="header-inner">
-          <a class="logo" href="#">
-            <img alt="Aarni Tech Logo" src="images\logo.png" />
-          </a>
-          <button aria-label="Toggle menu" class="mobile-menu-btn">☰</button>
-          <nav>
-            <ul id="nav-menu">
-              <li>
-                <a href="#about"> Aarnitech? </a>
-              </li>
-              <li>
-                <a href="#services"> Palvelut </a>
-              </li>
-              <li>
-                <a href="#contact"> Yhteydenotto </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>
-            Ihmisen kokoinen
-            <span class="highlight"> ATK-palvelu </span>
-          </h1>
-          <p>
-            Asiantuntevaa teknistä apua
-            <span class="highlight"> kiertotalouden </span>
-            hengessä.
-          </p>
-          <a class="btn" href="#contact"> Ota yhteyttä! </a>
-        </div>
-      </div>
-    </section>
-    <!--About and Services section-->
-    <section class="services-section" id="services">
-      <h2 class="section-title">Palvelut</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <img
-            alt="Vihreä ostaja"
-            class="service-img"
-            src="images/recycle.png"
-          />
-          <div class="service-text">
-            <h3>🌿 Vihreä ostaja</h3>
-            <p>
-              Autan sinua löytämään parhaan käytetyn laitteen tarpeisiisi —
+ </script>
+ <body>
+  <!-- Header Section -->
+  <header id="header">
+   <div class="container">
+    <div class="header-inner">
+     <a class="logo" href="#">
+      <img alt="Aarni Tech Logo" src="images\logo.png"/>
+     </a>
+     <button aria-label="Toggle menu" class="mobile-menu-btn">
+      ☰
+     </button>
+     <nav>
+      <ul id="nav-menu">
+       <li>
+        <a href="#about">
+         Aarnitech?
+        </a>
+       </li>
+       <li>
+        <a href="#services">
+         Palvelut
+        </a>
+       </li>
+       <li>
+        <a href="#contact">
+         Yhteydenotto
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+   <div class="container">
+    <div class="hero-content">
+     <h1>
+      Ihmisen kokoinen
+      <span class="highlight">
+       ATK-palvelu
+      </span>
+     </h1>
+     <p>
+      Asiantuntevaa teknistä apua
+      <span class="highlight">
+       kiertotalouden
+      </span>
+      hengessä.
+     </p>
+     <a class="btn" href="#contact">
+      Ota yhteyttä!
+     </a>
+    </div>
+   </div>
+  </section>
+  <!--About and Services section-->
+  <section class="services-section" id="services">
+   <h2 class="section-title">
+    Palvelut
+   </h2>
+   <div class="services-grid">
+    <div class="service-card">
+     <img alt="Vihreä ostaja" class="service-img" src="images/recycle.png"/>
+     <div class="service-text">
+      <h3>
+       🌿 Vihreä ostaja
+      </h3>
+      <p>
+       Autan sinua löytämään parhaan käytetyn laitteen tarpeisiisi —
               kestävästi ja kustannustehokkaasti. Ei enää tuntikausien vertailua
               ja pähkäilyä!
-            </p>
-            <p class="service-price">alk. 29 €</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <img
-            alt="Käyttöönotto ja päivitykset"
-            class="service-img"
-            src="images/frustrated.png"
-          />
-          <div class="service-text">
-            <h3>🛠️ Käyttöönotto ja päivitykset</h3>
-            <p>
-              Olipa kyseessä uusi laite tai vanhemman tietokoneen päivitys,
+      </p>
+      <p class="service-price">
+       alk. 29 €
+      </p>
+     </div>
+    </div>
+    <div class="service-card">
+     <img alt="Käyttöönotto ja päivitykset" class="service-img" src="images/frustrated.png"/>
+     <div class="service-text">
+      <h3>
+       🛠️ Käyttöönotto ja päivitykset
+      </h3>
+      <p>
+       Olipa kyseessä uusi laite tai vanhemman tietokoneen päivitys,
               asennan, säädän ja huollan laitteet toimivaksi paketiksi.
-            </p>
-            <p class="service-price">alk. 39 €</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <img
-            alt="Inventointi ja jälleenmyynti"
-            class="service-img"
-            src="images/cluttered.png"
-          />
-          <div class="service-text">
-            <h3>📦 Inventointi ja jälleenmyynti</h3>
-            <p>
-              Käyn läpi vanhat laitteesi, teen niistä arvion ja autan löytämään
+      </p>
+      <p class="service-price">
+       alk. 39 €
+      </p>
+     </div>
+    </div>
+    <div class="service-card">
+     <img alt="Inventointi ja jälleenmyynti" class="service-img" src="images/cluttered.png"/>
+     <div class="service-text">
+      <h3>
+       📦 Inventointi ja jälleenmyynti
+      </h3>
+      <p>
+       Käyn läpi vanhat laitteesi, teen niistä arvion ja autan löytämään
               niille uuden kodin — tai ostan ne suoraan sinulta.
-            </p>
-            <p class="service-price">alk. 39 €</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <img
-            alt="Pelikone käytettynä"
-            class="service-img"
-            src="images/gamingpc.png"
-          />
-          <div class="service-text">
-            <h3>🎮 Pelikone käytettynä</h3>
-            <p>
-              Haaveissa pelikone mutta budjetti tiukalla? Rakennan tarpeisiisi
+      </p>
+      <p class="service-price">
+       alk. 39 €
+      </p>
+     </div>
+    </div>
+    <div class="service-card">
+     <img alt="Pelikone käytettynä" class="service-img" src="images/gamingpc.png"/>
+     <div class="service-text">
+      <h3>
+       🎮 Pelikone käytettynä
+      </h3>
+      <p>
+       Haaveissa pelikone mutta budjetti tiukalla? Rakennan tarpeisiisi
               sopivan pelikoneen laadukkaista käytetyistä osista!
-            </p>
-            <p class="service-price">alk. 59 €</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-section" id="about">
-      <div class="about-content">
-        <div class="about-image">
-          <img
-            alt="Aarni smiling"
-            class="about-photo"
-            src="images/aarni1.jpg"
-          />
-        </div>
-        <div class="about-text">
-          <p>
-            Olen perheenisä Littoisista ja vuosien varrella harrastanut
+      </p>
+      <p class="service-price">
+       alk. 59 €
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="about-section" id="about">
+   <div class="about-row">
+    <div class="about-image">
+     <img alt="Aarni smiling" class="about-photo" src="images/aarni1.jpg"/>
+    </div>
+    <div class="about-text">
+     <p>
+      Olen perheenisä Littoisista ja vuosien varrella harrastanut
             kaikenlaisten teknisten vempainten ja ohjelmistojen kanssa.
             Lähipiirin teknisenä tukihenkilönä toimiminen on antanut hyvät
             valmiudet ratkoa ongelmia kärsivällisesti ja vielä tärkeämpää -
             käyttäjälähtöisesti.
-          </p>
-          <p>
-            En ole rakentamassa IT-imperiumia – olen vain yksi tyyppi, joka
+     </p>
+     <p>
+      En ole rakentamassa IT-imperiumia – olen vain yksi tyyppi, joka
             tarjoaa apuaan teknisten pulmien kanssa. Oli kyse sitten pienestä
             säädöstä wifin tai television kanssa tai vähän isommasta
             laitehankinnasta, lähestyn hommia määrätietoisella ja asiallisella
             otteella. Vapaa-ajalla viihdyn pc-pelaamisen ja jalkapallon äärellä.
-          </p>
-        </div>
-        <div class="about-image">
-          <img
-            alt="Aarni helping"
-            class="about-photo"
-            src="images/aarni2.JPG"
-          />
-        </div>
-      </div>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/I0GwzsLFDkY?si=HPjj9ZZfgv_nryeL"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2>Ota yhteyttä!</h2>
-          <p>
-            Kerro ihmeessä millaisen ongelman kanssa tarvitset apua, niin
+     </p>
+    </div>
+    <div class="about-image">
+     <img alt="Aarni helping" class="about-photo" src="images/aarni2.JPG"/>
+    </div>
+   </div>
+   <div class="video-container">
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/I0GwzsLFDkY?si=HPjj9ZZfgv_nryeL" title="YouTube video player">
+    </iframe>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+   <div class="container">
+    <div class="section-header">
+     <h2>
+      Ota yhteyttä!
+     </h2>
+     <p>
+      Kerro ihmeessä millaisen ongelman kanssa tarvitset apua, niin
             vastaan vuorokauden sisällä.
-          </p>
-        </div>
-        <div class="contact-content">
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <label for="name"> Nimi </label>
-                <input class="form-control" id="name" required="" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="email"> Sähköposti </label>
-                <input
-                  class="form-control"
-                  id="email"
-                  required=""
-                  type="email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="subject"> Aihe </label>
-                <input
-                  class="form-control"
-                  id="subject"
-                  required=""
-                  type="text"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message"> Viestisi </label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  required=""
-                ></textarea>
-              </div>
-              <button class="btn" type="submit">Lähetä viesti</button>
-            </form>
-          </div>
-          <div class="contact-info">
-            <h3>Jutellaan!</h3>
-            <p>
-              Pyrin vastaamaan vuorokauden sisällä. Selvitetään yhdessä voisinko
+     </p>
+    </div>
+    <div class="contact-content">
+     <div class="contact-form">
+      <form id="contactForm">
+       <div class="form-group">
+        <label for="name">
+         Nimi
+        </label>
+        <input class="form-control" id="name" required="" type="text"/>
+       </div>
+       <div class="form-group">
+        <label for="email">
+         Sähköposti
+        </label>
+        <input class="form-control" id="email" required="" type="email"/>
+       </div>
+       <div class="form-group">
+        <label for="subject">
+         Aihe
+        </label>
+        <input class="form-control" id="subject" required="" type="text"/>
+       </div>
+       <div class="form-group">
+        <label for="message">
+         Viestisi
+        </label>
+        <textarea class="form-control" id="message" required=""></textarea>
+       </div>
+       <button class="btn" type="submit">
+        Lähetä viesti
+       </button>
+      </form>
+     </div>
+     <div class="contact-info">
+      <h3>
+       Jutellaan!
+      </h3>
+      <p>
+       Pyrin vastaamaan vuorokauden sisällä. Selvitetään yhdessä voisinko
               olla avuksi!
-            </p>
-            <p>
-              Teen yhteydenottosi perusteella arvion tarvittavista
+      </p>
+      <p>
+       Teen yhteydenottosi perusteella arvion tarvittavista
               toimenpiteistä ja saat kiinteän hinnan heti - ilman piilokuluja.
-            </p>
-            <p>
-              Kaikki yhteydenotot käsitellään käsitellään EU:n
+      </p>
+      <p>
+       Kaikki yhteydenotot käsitellään käsitellään EU:n
               tietosuoja-asetuksen (GDPR) mukaisesti.
-            </p>
-            <h3>Yhteystiedot</h3>
-            <p>
-              Email:
-              <span class="highlight"> info@aarnitech.com </span>
-            </p>
-            <p>Phone: +358400607884</p>
-            <p>Tekstiviesti tai WhatsApp-viesti käy hyvin</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-column">
-            <h3>Aarni Tech</h3>
-            <p>
-              Ihmisen kokoista teknistä tukea jo vuodesta 2025 saakka. <br />
-              Psst! Onko vähän hienot kotisivut? Haluaisitko itsesi tai
+      </p>
+      <h3>
+       Yhteystiedot
+      </h3>
+      <p>
+       Email:
+       <span class="highlight">
+        info@aarnitech.com
+       </span>
+      </p>
+      <p>
+       Phone: +358400607884
+      </p>
+      <p>
+       Tekstiviesti tai WhatsApp-viesti käy hyvin
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+   <div class="container">
+    <div class="footer-content">
+     <div class="footer-column">
+      <h3>
+       Aarni Tech
+      </h3>
+      <p>
+       Ihmisen kokoista teknistä tukea jo vuodesta 2025 saakka.
+       <br/>
+       Psst! Onko vähän hienot kotisivut? Haluaisitko itsesi tai
               yrityksesi näköiset sivut yhtä raikkaalla ja ammattimaisella
               fiiliksellä? Heitä viestillä!
-            </p>
-          </div>
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="#about"> Aarnitech? </a>
-              </li>
-              <li>
-                <a href="#services"> Palvelut </a>
-              </li>
-              <li>
-                <a href="#contact"> Yhteydenotto </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Connect</h3>
-            <ul>
-              <li>
-                <a href="#" target="_blank"> LinkedIn </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"> Twitter </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"> GitHub </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>© 2025 Aarni Tech. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <script>
-      // Mobile menu toggle
+      </p>
+     </div>
+     <div class="footer-column">
+      <h3>
+       Quick Links
+      </h3>
+      <ul>
+       <li>
+        <a href="#about">
+         Aarnitech?
+        </a>
+       </li>
+       <li>
+        <a href="#services">
+         Palvelut
+        </a>
+       </li>
+       <li>
+        <a href="#contact">
+         Yhteydenotto
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-column">
+      <h3>
+       Connect
+      </h3>
+      <ul>
+       <li>
+        <a href="#" target="_blank">
+         LinkedIn
+        </a>
+       </li>
+       <li>
+        <a href="#" target="_blank">
+         Twitter
+        </a>
+       </li>
+       <li>
+        <a href="#" target="_blank">
+         GitHub
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="copyright">
+     <p>
+      © 2025 Aarni Tech. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
       document
         .querySelector(".mobile-menu-btn")
         .addEventListener("click", function () {
@@ -346,6 +379,6 @@
           alert("Thank you for your message! I will get back to you soon.");
           this.reset();
         });
-    </script>
-  </body>
+  </script>
+ </body>
 </html>
