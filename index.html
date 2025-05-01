@@ -190,34 +190,42 @@
               method="POST"
             >
               <div class="form-group">
-                <label for="name"> Nimi </label>
-                <input class="form-control" id="name" required="" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="email"> Sähköposti </label>
+                <label for="name">Nimi</label>
                 <input
                   class="form-control"
-                  id="email"
-                  required=""
-                  type="email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="subject"> Aihe </label>
-                <input
-                  class="form-control"
-                  id="subject"
-                  required=""
+                  id="name"
+                  name="name"
+                  required
                   type="text"
                 />
               </div>
               <div class="form-group">
-                <label for="message"> Viestisi </label>
+                <label for="email">Sähköposti</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                  type="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Aihe</label>
+                <input
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Viestisi</label>
                 <textarea
                   class="form-control"
                   id="message"
                   name="message"
-                  required=""
+                  required
                 ></textarea>
               </div>
               <button class="btn" type="submit">Lähetä viesti</button>
