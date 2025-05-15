@@ -37,8 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
     updateButtonText();
   });
 });
-document
-  .querySelector(".mobile-menu-btn")
-  ?.addEventListener("click", function () {
-    document.querySelector("nav ul")?.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".mobile-menu-btn");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuBtn?.addEventListener("click", () => {
+    navMenu?.classList.toggle("active");
   });
+
+  // Close menu when any link is clicked
+  document.querySelectorAll("#nav-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu?.classList.remove("active");
+    });
+  });
+});
