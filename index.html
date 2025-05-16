@@ -12,29 +12,35 @@
     <header id="header">
       <div class="container">
         <div class="header-inner">
-          <a class="logo" href="#">
-            <img alt="Aarni Tech Logo" src="images\logo.png" />
-          </a>
-          <button aria-label="Toggle menu" class="mobile-menu-btn">☰</button>
-          <nav>
-            <ul id="nav-menu">
-              <li>
-                <a href="#about"> Aarnitech? </a>
-              </li>
-              <li>
-                <a href="#services"> Palvelut </a>
-              </li>
-              <li>
-                <a href="#contact"> Yhteydenotto </a>
-              </li>
-            </ul>
+          <!-- Left: Logo + toggle -->
+          <div class="logo-column">
+            <a class="logo" href="#">
+              <img
+                id="siteLogo"
+                alt="Aarni Tech Logo"
+                src="images/logo-light.png"
+              />
+            </a>
             <button id="darkModeToggle" class="dark-toggle-text">
               Pimeä tila
             </button>
-          </nav>
+          </div>
+
+          <!-- Right: Nav + menu button -->
+          <div class="nav-column">
+            <button aria-label="Toggle menu" class="mobile-menu-btn">☰</button>
+            <nav>
+              <ul id="nav-menu">
+                <li><a href="#about">Aarnitech?</a></li>
+                <li><a href="#services">Palvelut</a></li>
+                <li><a href="#contact">Yhteydenotto</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">

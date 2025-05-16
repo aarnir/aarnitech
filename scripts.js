@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateButtonText();
+  updateLogo();
 
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
@@ -35,7 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.contains("dark-mode") ? "dark" : "light"
     );
     updateButtonText();
+    updateLogo();
   });
+  function updateLogo() {
+    const logo = document.getElementById("siteLogo");
+    if (!logo) return;
+
+    logo.src = document.body.classList.contains("dark-mode")
+      ? "images/logo-light.png" // now used in dark mode
+      : "images/logo-dark.png"; // used in light mode
+  }
 });
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector(".mobile-menu-btn");
