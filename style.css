@@ -318,7 +318,10 @@ body.dark-mode .hero {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
 }
-
+.extra-info {
+  margin-top: 10px;
+  /* You can add transitions for a smoother effect */
+}
 /* About Section */
 .about-section {
   max-width: 1200px;
