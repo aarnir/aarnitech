@@ -8,7 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
       details.style.display = "block";
     }
   }
-
+function toggleInfo(button) {
+  const infoDiv = button.nextElementSibling;
+  if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+    infoDiv.style.display = "block";
+    button.textContent = "Show less";
+  } else {
+    infoDiv.style.display = "none";
+    button.textContent = "Expand to see more info";
+  }
+}
   // Dark mode toggle
   const toggleBtn = document.getElementById("darkModeToggle");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
