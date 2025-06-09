@@ -322,6 +322,37 @@ body.dark-mode .hero {
   margin-top: 10px;
   /* You can add transitions for a smoother effect */
 }
+.expand-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 16px;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.expand-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.expand-btn:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.expand-btn:hover::after {
+  width: 100%;
+}
 /* About Section */
 .about-section {
   max-width: 1200px;
