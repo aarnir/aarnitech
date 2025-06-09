@@ -1,13 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Service toggle
-  function toggleService(card) {
-    const details = card.querySelector(".service-details");
-    if (details.style.display === "block") {
-      details.style.display = "none";
-    } else {
-      details.style.display = "block";
-    }
-  }
+// Make toggleInfo globally accessible
 function toggleInfo(button) {
   const infoDiv = button.nextElementSibling;
   if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
@@ -18,6 +9,17 @@ function toggleInfo(button) {
     button.textContent = "Expand to see more info";
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  // Service toggle
+  function toggleService(card) {
+    const details = card.querySelector(".service-details");
+    if (details.style.display === "block") {
+      details.style.display = "none";
+    } else {
+      details.style.display = "block";
+    }
+  }
+
   // Dark mode toggle
   const toggleBtn = document.getElementById("darkModeToggle");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
