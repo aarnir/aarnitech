@@ -3,10 +3,10 @@ function toggleInfo(button) {
   const infoDiv = button.nextElementSibling;
   if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
     infoDiv.style.display = "block";
-    button.textContent = "Show less";
+    button.textContent = "Piilota lisätiedot";
   } else {
     infoDiv.style.display = "none";
-    button.textContent = "Expand to see more info";
+    button.textContent = "Lisätietoa";
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
