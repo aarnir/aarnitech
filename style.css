@@ -610,3 +610,28 @@ footer .copyright {
     margin-top: 0.5rem;
   }
 }
+
+.reviews-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 2rem;
+  text-align: center;
+}
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.review-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  font-style: italic;
+}
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
