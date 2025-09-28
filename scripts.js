@@ -73,3 +73,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Review card cycling
+  const reviews = document.querySelectorAll('.reviews-grid .review-card');
+  let current = 0;
+  if (reviews.length > 1) {
+    setInterval(() => {
+      reviews[current].classList.remove('active');
+      current = (current + 1) % reviews.length;
+      reviews[current].classList.add('active');
+    }, 4000); // 4 seconds per review
+  }
+});
